@@ -1,3 +1,7 @@
+# Author: Ember Ipek
+# Date: 8/6/2025
+# Preliminary proximity sensor data for eventual intigration with a HS210 drone
+
 from machine import Pin, time_pulse_us
 import time
 
@@ -31,4 +35,5 @@ def checkDist():
 while True:
     dist = checkDist()
     print("Distance:", dist)
+
     time.sleep(0.1)
